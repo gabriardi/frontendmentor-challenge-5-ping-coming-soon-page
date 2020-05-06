@@ -4,7 +4,7 @@
 
 ### Find the challenge [**here!**](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)
 
-### [My solution]() (hosted on [Vercel](https://vercel.com/))
+### [My solution](https://fm-challenge-5-ping-coming-soon-page.now.sh/) (hosted on [Vercel](https://vercel.com/))
 
 ## Description
 
