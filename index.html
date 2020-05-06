@@ -1,34 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  We are launching soon!
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 4rem;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="heading__logo">
+          <img src="./images/logo.svg" alt="Ping" />
+        </div>
+        <h1 class="heading__primary"><span>We are launching</span> soon!</h1>
+        <h2 class="heading__secondary">Subscribe and get notified</h2>
+      </div>
+      <div class="cta">
+        <form novalidate action="#" class="cta__form" id="form">
+          <input
+            id="email"
+            name="email"
+            placeholder="Your email address..."
+            aria-label="email address"
+            type="email"
+            class="cta__form__input"
+          />
+          <span class="cta__form__error-message" aria-live="polite"
+            >Please provide a valid email address</span
+          >
+          <button type="submit" class="cta__form__btn">Notify Me</button>
+        </form>
+      </div>
+      <div class="img-container">
+        <img src="./images/illustration-dashboard.png" alt="dashboard" />
+      </div>
+      <div class="footer">
+        <div class="footer__icons-group">
+          <div class="footer__icon-container">
+            <svg
+              role="img"
+              title="facebook"
+              aria-label="facebook"
+              class="footer__icon footer__icon--facebook"
+            >
+              <use href="./images/sprite.svg#icon-facebook" />
+            </svg>
+          </div>
+          <div class="footer__icon-container">
+            <svg
+              role="img"
+              title="twitter"
+              aria-label="twitter"
+              class="footer__icon footer__icon--twitter"
+            >
+              <use href="./images/sprite.svg#icon-twitter" />
+            </svg>
+          </div>
+          <div class="footer__icon-container">
+            <svg
+              role="img"
+              title="instagram"
+              aria-label="instagram"
+              class="footer__icon footer__icon--instagram"
+            >
+              <use href="./images/sprite.svg#icon-instagram" />
+            </svg>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </div>
+      </div>
+    </div>
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/gabriardi">Gabriele Ardizzone</a>.
+      </p>
+    </footer>
+    <script src="./validateEmail.js"></script>
+  </body>
 </html>

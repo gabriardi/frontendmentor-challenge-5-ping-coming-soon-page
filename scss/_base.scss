@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (min-width: $bp-larger) {
+    font-size: 75%;
+  }
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 58%;
+  }
+}
+
+::selection {
+  background-color: $color-primary-blue;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 4rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.img-container {
+  align-self: center;
+  width: 110%;
+  @media only screen and (min-width: $bp-medium) {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+}

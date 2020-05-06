@@ -1,0 +1,76 @@
+.cta {
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3.5rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      flex-direction: row;
+    }
+
+    &__input,
+    &__btn {
+      font-family: inherit;
+      padding: 1.5rem 3rem;
+      border-radius: $border-radius-default;
+      outline: none;
+      font-size: 1.4rem;
+    }
+    &__input {
+      border: 1px solid $color-gray-light;
+      margin-bottom: 1rem;
+      @media only screen and (min-width: $bp-medium) {
+        flex: 1;
+        margin-right: 2rem;
+        margin-bottom: 0;
+      }
+
+      &::placeholder {
+        color: $color-gray-light-2;
+      }
+
+      &--error {
+        border: 1px solid $color-secondary-red;
+      }
+    }
+    &__error-message {
+      margin-top: -0.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      color: $color-secondary-red;
+      font-style: italic;
+      display: none;
+
+      @media only screen and (min-width: $bp-medium) {
+        position: absolute;
+        top: 5.7rem;
+        left: 3rem;
+      }
+    }
+    &__btn {
+      cursor: pointer;
+      color: #fff;
+      background-color: $color-primary-blue;
+      box-shadow: 0 0.8rem 2rem rgba($color-primary-blue, 0.4);
+      border: none;
+      transition: all 0.2s;
+      padding-left: 5rem;
+      padding-right: 5rem;
+
+      &:hover {
+        background-color: $color-blue-light;
+      }
+      &:active {
+        background-color: $color-primary-blue;
+        transform: translateY(0.2rem);
+        box-shadow: 0 0.8rem 1.7rem rgba($color-primary-blue, 0.4);
+      }
+    }
+  }
+}
+
+.show-error {
+  display: block;
+}
