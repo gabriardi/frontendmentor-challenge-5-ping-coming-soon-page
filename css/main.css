@@ -13,15 +13,15 @@ html {
   font-size: 62.5%;
 }
 
-@media only screen and (min-width: 90em) {
-  html {
-    font-size: 75%;
-  }
-}
-
 @media only screen and (max-width: 22.5em) {
   html {
     font-size: 58%;
+  }
+}
+
+@media only screen and (min-width: 93em) {
+  html {
+    font-size: 75%;
   }
 }
 
