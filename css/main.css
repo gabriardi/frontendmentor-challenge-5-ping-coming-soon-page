@@ -46,6 +46,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 60rem;
   margin: 0 auto;
 }
@@ -59,7 +61,6 @@ html {
 
 @media only screen and (min-width: 35em) {
   .img-container {
-    margin-top: 1rem;
     width: 100%;
   }
 }
@@ -90,7 +91,7 @@ h2 {
 }
 
 .heading__logo {
-  margin: 4rem 0;
+  margin: 1rem 0;
 }
 
 .heading__primary {
@@ -105,7 +106,6 @@ h2 {
 .heading__secondary {
   color: #151f29;
   font-weight: 300;
-  margin-bottom: 3rem;
 }
 
 .cta__form {
@@ -118,7 +118,6 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-bottom: 3.5rem;
 }
 
 @media only screen and (min-width: 35em) {
@@ -219,10 +218,6 @@ h2 {
   display: block;
 }
 
-.footer {
-  margin-top: auto;
-}
-
 .footer__icon-container {
   cursor: pointer;
   padding: 1rem;
@@ -291,13 +286,6 @@ h2 {
 .footer__copyright {
   color: #969696;
   font-size: 1.3rem;
-  margin-bottom: 1.5rem;
   margin-top: 1rem;
-}
-
-@media only screen and (max-width: 22.5em) {
-  .footer__copyright {
-    margin: 1rem 0;
-  }
 }
 /*# sourceMappingURL=main.css.map */

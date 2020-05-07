@@ -28,6 +28,7 @@ html {
   display: flex;
   text-align: center;
   flex-direction: column;
+  justify-content: space-around;
   max-width: 60rem;
   margin: 0 auto;
 }
@@ -36,7 +37,6 @@ html {
   align-self: center;
   width: 110%;
   @media only screen and (min-width: $bp-medium) {
-    margin-top: 1rem;
     width: 100%;
   }
   img {
